@@ -1,0 +1,18 @@
+{
+  "component-dependencies": {
+    "oj-dyn": {
+      "version": "18.1.4",
+      "components": {
+        "container": "18.1.4",
+        "bind-section": "18.1.4"
+      }
+    },
+    "oj-dynamic": {
+      "version": "18.1.4",
+      "components": {
+        "shared": "18.1.4",
+        "utils": "18.1.4"
+      }
+    }
+  }
+}

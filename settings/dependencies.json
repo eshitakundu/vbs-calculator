@@ -1,0 +1,10 @@
+{
+  "component-dependencies": {
+    "oj-dyn": {
+      "version": "18.1.4",
+      "components": {
+        "container": "18.1.4"
+      }
+    }
+  }
+}

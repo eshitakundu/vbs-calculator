@@ -1,0 +1,33 @@
+{
+  "title": "Calculator-app",
+  "description": "",
+  "variables": {
+    "vDisplay": {
+      "type": "string",
+      "defaultValue": "...                          "
+    }
+  },
+  "metadata": {
+    "dynamicContainerMetadata": {
+      "type": "vb/ContainerMetadataProviderDescriptor"
+    }
+  },
+  "types": {},
+  "eventListeners": {
+  },
+  "imports": {
+    "components": {
+      "oj-button": {
+        "path": "ojs/ojbutton"
+      },
+      "oj-dialog": {
+        "path": "ojs/ojdialog"
+      },
+      "oj-input-text": {
+        "path": "ojs/ojinputtext"
+      }
+   }
+  },
+  "templates": {},
+  "constants": {}
+}

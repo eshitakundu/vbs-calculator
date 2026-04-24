@@ -1,0 +1,22 @@
+{
+  "title": "Shell Header",
+  "eventListeners": {
+  },
+  "events": {},
+  "imports": {
+    "components": {
+      "oj-avatar": {
+        "path": "ojs/ojavatar"
+      },
+      "oj-popup": {
+        "path": "ojs/ojpopup"
+      }
+    },
+    "css": [
+      "/resources/css/shell.css"
+    ]
+  },
+  "metadata": {},
+  "types": {},
+  "variables": {}
+}
