@@ -2,9 +2,9 @@
   "title": "Calculator-app",
   "description": "",
   "variables": {
-    "vDisplay": {
+    "displayString": {
       "type": "string",
-      "defaultValue": "...                          "
+      "defaultValue": " "
     }
   },
   "metadata": {
@@ -14,6 +14,221 @@
   },
   "types": {},
   "eventListeners": {
+    "buttonAction": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+
+            "charToAdd": "7"
+          }
+        }
+      ]
+    },
+    "buttonAction10": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "0"
+          }
+        }
+      ]
+    },
+    "buttonAction11": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "%"
+          }
+        }
+      ]
+    },
+    "buttonAction12": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "/"
+          }
+        }
+      ]
+    },
+    "buttonAction13": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "("
+          }
+        }
+      ]
+    },
+    "buttonAction14": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": " *"
+          }
+        }
+      ]
+    },
+    "buttonAction15": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "+"
+          }
+        }
+      ]
+    },
+    "buttonAction16": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "-"
+          }
+        }
+      ]
+    },
+    "buttonAction17": {
+      "chains": [
+        {
+          "chain": "BackspaceChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction18": {
+      "chains": [
+        {
+          "chain": "EqualsToChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction19": {
+      "chains": [
+        {
+          "chain": "ClearChain",
+          "parameters": {
+            "event": "{{$event}}",
+            "originalEvent": "{{$event.detail.originalEvent}}"
+          }
+        }
+      ]
+    },
+    "buttonAction2": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "8"
+          }
+        }
+      ]
+    },
+    "buttonAction20": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": ")"
+          }
+        }
+      ]
+    },
+    "buttonAction21": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "."
+          }
+        }
+      ]
+    },
+    "buttonAction3": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "9"
+          }
+        }
+      ]
+    },
+    "buttonAction4": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "4"
+          }
+        }
+      ]
+    },
+    "buttonAction5": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "5"
+          }
+        }
+      ]
+    },
+    "buttonAction6": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "6"
+          }
+        }
+      ]
+    },
+    "buttonAction7": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "1"
+          }
+        }
+      ]
+    },
+    "buttonAction8": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "2"
+          }
+        }
+      ]
+    },
+    "buttonAction9": {
+      "chains": [
+        {
+          "chain": "AppendCharChain",
+          "parameters": {
+            "charToAdd": "3"
+          }
+        }
+      ]
+    }
+
   },
   "imports": {
     "components": {

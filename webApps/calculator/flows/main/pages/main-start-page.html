@@ -14,71 +14,98 @@
   </div>
 </oj-dialog>
 <div class="oj-flex">
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="%" class="oj-button-sm oj-button-full-width" chroming="solid"></oj-button>
-  </div>
-  <oj-input-text readonly="true" value="{{ $variables.vDisplay }}"
-    class="oj-form-control-text-align-right oj-flex-item oj-sm-12 oj-md-6 oj-form-control-max-width-md oj-bg-neutral-200 oj-color-invert"></oj-input-text>
-  <div class="oj-flex-item oj-sm-12 oj-md-2">
-    <oj-button label="CLEAR" class="oj-button-sm oj-button-full-width" chroming="danger"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-1">
-    <oj-button label="⌫" class="oj-button-sm oj-button-full-width" chroming="callToAction"></oj-button>
-  </div>
-</div>
-<div class="oj-flex">
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="7" class="oj-button-sm oj-button-full-width" chroming="outlined"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="8" class="oj-button-sm oj-button-full-width"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="9" class="oj-button-sm oj-button-full-width"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="*" class="oj-button-sm oj-button-full-width" chroming="solid"></oj-button>
-  </div>
-</div>
-<div class="oj-flex">
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="4" class="oj-button-sm oj-button-full-width"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="5" class="oj-button-sm oj-button-full-width"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="6" class="oj-button-sm oj-button-full-width"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="+" class="oj-button-sm oj-button-full-width" chroming="solid"></oj-button>
-  </div>
-</div>
-<div class="oj-flex">
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="1" class="oj-button-full-width oj-button-sm"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="2" class="oj-button-full-width oj-button-sm"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="3" class="oj-button-full-width oj-button-sm"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="-" class="oj-button-full-width oj-button-sm" chroming="solid"></oj-button>
-  </div>
-</div>
-<div class="oj-flex">
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="/" class="oj-button-full-width oj-button-sm" chroming="solid"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="0" class="oj-button-full-width oj-button-sm"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="." class="oj-button-full-width oj-button-sm" chroming="solid"></oj-button>
-  </div>
-  <div class="oj-flex-item oj-sm-12 oj-md-3">
-    <oj-button label="=" class="oj-button-full-width oj-button-sm" chroming="callToAction"></oj-button>
+  <div class="oj-flex oj-flex-item oj-sm-12 oj-md-12 oj-sm-flex-direction-column oj-sm-justify-content-space-between">
+    <hr class="oj-hr oj-flex-item">
+    <hr class="oj-hr oj-flex-item oj-sm-flex-initial">
+    <div class="oj-flex oj-flex-item oj-sm-flex-initial">
+      <div class="oj-flex-item oj-sm-12 oj-md-1">
+        <oj-button label="(" class="oj-button-sm oj-button-full-width"
+          chroming="solid" on-oj-action="[[$listeners.buttonAction13]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-1">
+        <oj-button label=")" chroming="solid" class="oj-button-full-width oj-button-sm oj-bg-neutral-30"
+          on-oj-action="[[$listeners.buttonAction20]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-1">
+        <oj-button label="." class="oj-button-full-width oj-button-sm oj-bg-info-30" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction21]]"></oj-button>
+      </div>
+      <oj-input-text readonly="true" value="{{ $variables.displayString }}"
+        class="oj-form-control-text-align-right oj-flex-item oj-sm-12 oj-md-6 oj-form-control-max-width-md oj-bg-neutral-200 oj-color-invert"
+        label-hint="RESULT"></oj-input-text>
+      <div class="oj-flex-item oj-sm-12 oj-md-2">
+        <oj-button label="CLEAR" class="oj-button-sm oj-button-full-width" chroming="danger"
+          on-oj-action="[[$listeners.buttonAction19]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-1">
+        <oj-button label="⌫" class="oj-button-sm oj-button-full-width" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction17]]"></oj-button>
+      </div>
+    </div>
+    <div class="oj-flex oj-flex-item oj-sm-flex-initial">
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="7" class="oj-button-sm oj-button-full-width" chroming="outlined"
+          on-oj-action="[[$listeners.buttonAction]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="8" class="oj-button-sm oj-button-full-width" on-oj-action="[[$listeners.buttonAction2]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="9" class="oj-button-sm oj-button-full-width" on-oj-action="[[$listeners.buttonAction3]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="*" class="oj-button-sm oj-button-full-width" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction14]]"></oj-button>
+      </div>
+    </div>
+    <div class="oj-flex oj-flex-item oj-sm-flex-initial">
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="4" class="oj-button-sm oj-button-full-width" on-oj-action="[[$listeners.buttonAction4]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="5" class="oj-button-sm oj-button-full-width" on-oj-action="[[$listeners.buttonAction5]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="6" class="oj-button-sm oj-button-full-width" on-oj-action="[[$listeners.buttonAction6]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="+" class="oj-button-sm oj-button-full-width oj-bg-neutral-30" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction15]]"></oj-button>
+      </div>
+    </div>
+    <div class="oj-flex oj-flex-item oj-sm-flex-initial">
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="1" class="oj-button-full-width oj-button-sm" on-oj-action="[[$listeners.buttonAction7]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="2" class="oj-button-full-width oj-button-sm" on-oj-action="[[$listeners.buttonAction8]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="3" class="oj-button-full-width oj-button-sm" on-oj-action="[[$listeners.buttonAction9]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="-" class="oj-button-full-width oj-button-sm oj-bg-info-30" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction16]]"></oj-button>
+      </div>
+    </div>
+    <div class="oj-flex oj-flex-item oj-sm-flex-initial">
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="/" class="oj-button-full-width oj-button-sm" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction12]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="0" class="oj-button-full-width oj-button-sm" on-oj-action="[[$listeners.buttonAction10]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="%" class="oj-button-full-width oj-button-sm" chroming="solid"
+          on-oj-action="[[$listeners.buttonAction11]]"></oj-button>
+      </div>
+      <div class="oj-flex-item oj-sm-12 oj-md-3">
+        <oj-button label="=" class="oj-button-full-width oj-button-sm" chroming="callToAction"
+          on-oj-action="[[$listeners.buttonAction18]]"></oj-button>
+      </div>
+    </div>
+    <hr class="oj-hr oj-flex-item oj-sm-flex-initial">
+    <hr class="oj-hr oj-flex-item oj-sm-flex-initial">
   </div>
 </div>
